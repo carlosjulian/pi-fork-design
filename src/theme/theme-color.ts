@@ -17,13 +17,13 @@ const CUTE_ROLE_MAPPINGS: Record<string, string> = {
 	mint: "mdCode",
 	green: "success",
 	orange: "warning",
-	read: "#C5A3E0",
-	write: "#A5CBE8",
-	bash: "#8EC5A6",
-	bashOutput: "#8EC5A6",
-	salmon: "#F0978A",
-	gentle: "#a46db5",
-	secondary: "#D7A0B8",
+	read: "#60A5FA",
+	write: "#38BDF8",
+	bash: "#00E5FF",
+	bashOutput: "#5EEAD4",
+	salmon: "#00E5FF",
+	gentle: "#2563EB",
+	secondary: "#60A5FA",
 };
 
 /**
@@ -110,14 +110,14 @@ export function installCuteMarkdownThemeHook(themeInstance?: unknown): void {
 }
 
 /**
- * Pastel-pink block cursor (#FFB1DD bg over #1A1218 fg) derived from theme keys,
+ * Bright cyan block cursor (#7CEFFF bg over #0B121B fg) derived from theme keys,
  * so callers hold no hardcoded 38;2/48;2 sequences. The background ANSI is
  * derived from the borderAccent (or pinkBright) foreground ANSI, keeping the same hex in both
  * truecolor and 256-color modes without consuming a dedicated bg slot.
  */
 export function cursorStyle(theme: Theme, text: string): string {
 	try {
-		const fgDark = "\x1b[38;2;26;18;24m"; // #1A1218
+		const fgDark = "\x1b[38;2;11;18;27m"; // #0B121B
 		let bgPink: string;
 		try {
 			bgPink = theme.getFgAnsi("borderAccent" as any).replace("[38;", "[48;");
@@ -125,7 +125,7 @@ export function cursorStyle(theme: Theme, text: string): string {
 			try {
 				bgPink = theme.getFgAnsi("pinkBright" as any).replace("[38;", "[48;");
 			} catch {
-				bgPink = "\x1b[48;2;255;177;221m"; // #FFB1DD
+				bgPink = "\x1b[48;2;124;239;255m"; // #7CEFFF
 			}
 		}
 		return `${bgPink}${fgDark}${text}\x1b[0m`;

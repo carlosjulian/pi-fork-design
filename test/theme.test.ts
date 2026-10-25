@@ -136,13 +136,13 @@ test("installWelcomeHeaderGuard - protects Welcome Dashboard against late foreig
 	assert.ok(Array.isArray(rendered));
 });
 
-test("CinlodevCute.json theme - userMessageBg matches toolSuccessBg dark violet", () => {
+test("CinlodevCute.json theme - userMessageBg matches toolSuccessBg dark navy", () => {
 	const themePath = fileURLToPath(new URL("../themes/CinlodevCute.json", import.meta.url));
 	assert.ok(fs.existsSync(themePath), "themes/CinlodevCute.json must exist");
 	const themeJson = JSON.parse(fs.readFileSync(themePath, "utf8"));
-	assert.equal(themeJson.vars.userMessageBg, "#140a28");
-	assert.equal(themeJson.vars.toolSuccessBg, "#140a28");
-	assert.equal(themeJson.vars.userMessageText, "#C5C18E");
+	assert.equal(themeJson.vars.userMessageBg, "#0B2038");
+	assert.equal(themeJson.vars.toolSuccessBg, "#0B2038");
+	assert.equal(themeJson.vars.userMessageText, "#7DD3FC");
 	assert.equal(themeJson.colors.userMessageBg, "userMessageBg");
 });
 
