@@ -136,9 +136,9 @@ test("installWelcomeHeaderGuard - protects Welcome Dashboard against late foreig
 	assert.ok(Array.isArray(rendered));
 });
 
-test("CinlodevCute.json theme - userMessageBg matches toolSuccessBg dark navy", () => {
-	const themePath = fileURLToPath(new URL("../themes/CinlodevCute.json", import.meta.url));
-	assert.ok(fs.existsSync(themePath), "themes/CinlodevCute.json must exist");
+test("CarlosJulian.json theme - userMessageBg matches toolSuccessBg dark navy", () => {
+	const themePath = fileURLToPath(new URL("../themes/CarlosJulian.json", import.meta.url));
+	assert.ok(fs.existsSync(themePath), "themes/CarlosJulian.json must exist");
 	const themeJson = JSON.parse(fs.readFileSync(themePath, "utf8"));
 	assert.equal(themeJson.vars.userMessageBg, "#0B2038");
 	assert.equal(themeJson.vars.toolSuccessBg, "#0B2038");
@@ -146,8 +146,8 @@ test("CinlodevCute.json theme - userMessageBg matches toolSuccessBg dark navy", 
 	assert.equal(themeJson.colors.userMessageBg, "userMessageBg");
 });
 
-test("CinlodevCute.json theme - strictly conforms to Pi 1.2.0 ThemeJsonSchema", async () => {
-	const themePath = fileURLToPath(new URL("../themes/CinlodevCute.json", import.meta.url));
+test("CarlosJulian.json theme - strictly conforms to Pi 1.2.0 ThemeJsonSchema", async () => {
+	const themePath = fileURLToPath(new URL("../themes/CarlosJulian.json", import.meta.url));
 	const themeJson = JSON.parse(fs.readFileSync(themePath, "utf8"));
 	assert.equal(themeJson.$schema, "https://pi.dev/schemas/theme.schema.json");
 	assert.equal(themeJson.glyphs, undefined, "glyphs must not exist on root");
@@ -156,7 +156,7 @@ test("CinlodevCute.json theme - strictly conforms to Pi 1.2.0 ThemeJsonSchema", 
 	try {
 		const base = "/home/cinlodev/.pi/agent/install/releases/1.2.0/node_modules/@earendil-works/pi-coding-agent";
 		const { validateThemeJson } = await import(base + "/dist/modes/interactive/theme/theme-schema.js");
-		assert.doesNotThrow(() => validateThemeJson("CinlodevCute.json", themeJson));
+		assert.doesNotThrow(() => validateThemeJson("CarlosJulian.json", themeJson));
 	} catch (e: any) {
 		if (e?.code === "ERR_MODULE_NOT_FOUND") {
 			return;

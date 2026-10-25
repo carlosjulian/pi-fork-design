@@ -205,6 +205,7 @@ function candidateGlyphsFiles(): string[] {
 	try {
 		const here = path.dirname(fileURLToPath(import.meta.url));
 		const packageDir = path.resolve(here, "../..");
+		add(path.join(packageDir, "themes", "CarlosJulian.json"));
 		add(path.join(packageDir, "themes", "CinlodevCute.json"));
 		add(path.join(packageDir, "config", "CinlodevCute.glyphs.json"));
 		add(path.join(packageDir, "themes", "CinlodevCute.glyphs.json"));
