@@ -605,7 +605,12 @@ test("sidebar-state - sidebarState, sidebarPart and renderCUTESidebarBanner oper
 	const banner = renderCUTESidebarBanner(50);
 	assert.ok(banner.length > 0, "Debe retornar al menos 1 línea de banner");
 	assert.ok(banner[0].includes("✿"), "Debe contener el glifo decorativo del banner");
-	assert.ok(banner[0].toUpperCase().includes("CINLODEV"), "Debe contener la marca o usuario en el banner");
+	assert.ok(
+		banner[0].toUpperCase().includes("CARLOS") ||
+		banner[0].toUpperCase().includes("JULIÁN") ||
+		banner[0].toUpperCase().includes("CINLODEV"),
+		"Debe contener la marca o usuario en el banner",
+	);
 });
 
 

@@ -1,25 +1,25 @@
 {
-	"_note": "Cinlodev CUTE customizable texts. Colors stay in CinlodevCute.json via theme.fg(); this file only holds human-readable strings. Missing file or keys fall back to the defaults in src/cute-strings.ts, so the default visual stays identical.",
-	"brandTitle": "◆ Cinlodev CUTE",
-	"brandShort": "✿ Cinlodev CUTE",
-	"brandFallback": "✿ Cinlodev",
-	"hudTitle": "◆ Cinlodev CUTE",
-	"footerBrand": "Cinlodev CUTE",
-	"footerShort": "Cinlodev",
+	"_note": "Carlos Julián customizable texts. Colors stay in CinlodevCute.json via theme.fg(); this file only holds human-readable strings. Missing file or keys fall back to the defaults in src/cute-strings.ts, so the default visual stays identical.",
+	"brandTitle": "◆ Carlos Julián",
+	"brandShort": "✿ Carlos Julián",
+	"brandFallback": "✿ Carlos Julián",
+	"hudTitle": "◆ Carlos Julián",
+	"footerBrand": "Carlos Julián",
+	"footerShort": "Carlos Julián",
 	"footerSymbol": "✿",
 	"hudDescriptions": {
-		"hud": "Toggle or configure persistent Cinlodev CUTE HUD widget above input (/hud, /hud compact, /hud full, /hud off)",
-		"hudStatus": "Toggle the Cinlodev CUTE HUD footer status line"
+		"hud": "Toggle or configure persistent Carlos Julián HUD widget above input (/hud, /hud compact, /hud full, /hud off)",
+		"hudStatus": "Toggle the Carlos Julián HUD footer status line"
 	},
 	"notifys": {
-		"notInTui": "Cinlodev CUTE HUD widget is available in TUI mode.",
-		"deactivated": "Cinlodev CUTE HUD desactivado",
-		"activated": "Cinlodev CUTE HUD activado encima del input",
-		"compact": "Cinlodev CUTE HUD modo compacto activado",
-		"full": "Cinlodev CUTE HUD modo completo activado",
-		"activatedWithMode": "Cinlodev CUTE HUD activado encima del input ({mode})",
-		"statusActivated": "Cinlodev CUTE HUD footer status activado",
-		"statusDeactivated": "Cinlodev CUTE HUD footer status desactivado",
+		"notInTui": "Carlos Julián HUD widget is available in TUI mode.",
+		"deactivated": "Carlos Julián HUD desactivado",
+		"activated": "Carlos Julián HUD activado encima del input",
+		"compact": "Carlos Julián HUD modo compacto activado",
+		"full": "Carlos Julián HUD modo completo activado",
+		"activatedWithMode": "Carlos Julián HUD activado encima del input ({mode})",
+		"statusActivated": "Carlos Julián HUD footer status activado",
+		"statusDeactivated": "Carlos Julián HUD footer status desactivado",
 		"welcomeHidden": "Gentlewoman Welcome Dashboard ocultado",
 		"welcomeShown": "Gentlewoman Welcome Dashboard activado",
 		"welcomeExpanded": "Gentlewoman Welcome Dashboard: modo expandido",
@@ -37,10 +37,10 @@
 		"toolsFmt": "tools {tools}"
 	},
 	"sidebarBanner": {
-		"full": "✿ Cinlodev CUTE · Gentle-Shell ✿",
-		"short": "✿ Cinlodev CUTE ✿",
+		"full": "✿ Carlos Julián · Gentle-Shell ✿",
+		"short": "✿ Carlos Julián ✿",
 		"glyph": "✿",
-		"brand": "Cinlodev CUTE",
+		"brand": "Carlos Julián",
 		"partner": "Gentle-Shell"
 	},
 	"todos": {
@@ -67,7 +67,7 @@
 	"welcomeTitles": {
 		"persona": "el Gentleman",
 		"dashboard": "Gentleman Welcome Dashboard",
-		"themeFallback": "Cinlodev CUTE",
+		"themeFallback": "Carlos Julián",
 		"commandDescription": "Configure or toggle the Gentleman Welcome Dashboard (/welcome, /welcome full, /welcome compact, /welcome off)"
 	},
 	"welcomeHotkeys": {
@@ -79,7 +79,7 @@
 		"expand": "expand",
 		"collapse": "collapse"
 	},
-	"commandName": "cinlodev",
-	"commandDescription": "Check or reapply Cinlodev CUTE aesthetics and widgets (/cinlodev)",
-	"commandNotify": "🌸 Cinlodev CUTE: Header, HUD, Editor y Footer CUTE aplicados."
+	"commandName": "carlosjulian",
+	"commandDescription": "Check or reapply Carlos Julián aesthetics and widgets (/carlosjulian)",
+	"commandNotify": "🌸 Carlos Julián: Header, HUD, Editor y Footer aplicados."
 }

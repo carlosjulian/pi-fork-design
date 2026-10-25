@@ -199,26 +199,26 @@ export const PERSONA_PRESETS: Record<
 export const CUTE_STRINGS_FILENAME = "CinlodevCute.strings.json";
 
 const DEFAULTS: CuteStrings = {
-	brandTitle: "◆ Cinlodev CUTE",
-	brandShort: "✿ Cinlodev CUTE",
-	brandFallback: "✿ Cinlodev",
-	hudTitle: "◆ Cinlodev CUTE",
-	footerBrand: "Cinlodev CUTE",
-	footerShort: "Cinlodev",
+	brandTitle: "◆ Carlos Julián",
+	brandShort: "✿ Carlos Julián",
+	brandFallback: "✿ Carlos Julián",
+	hudTitle: "◆ Carlos Julián",
+	footerBrand: "Carlos Julián",
+	footerShort: "Carlos Julián",
 	footerSymbol: "✿",
 	hudDescriptions: {
-		hud: "Toggle or configure persistent Cinlodev CUTE HUD widget above input (/hud, /hud compact, /hud full, /hud off)",
-		hudStatus: "Toggle the Cinlodev CUTE HUD footer status line",
+		hud: "Toggle or configure persistent Carlos Julián HUD widget above input (/hud, /hud compact, /hud full, /hud off)",
+		hudStatus: "Toggle the Carlos Julián HUD footer status line",
 	},
 	notifys: {
-		notInTui: "Cinlodev CUTE HUD widget is available in TUI mode.",
-		deactivated: "Cinlodev CUTE HUD desactivado",
-		activated: "Cinlodev CUTE HUD activado encima del input",
-		compact: "Cinlodev CUTE HUD modo compacto activado",
-		full: "Cinlodev CUTE HUD modo completo activado",
-		activatedWithMode: "Cinlodev CUTE HUD activado encima del input ({mode})",
-		statusActivated: "Cinlodev CUTE HUD footer status activado",
-		statusDeactivated: "Cinlodev CUTE HUD footer status desactivado",
+		notInTui: "Carlos Julián HUD widget is available in TUI mode.",
+		deactivated: "Carlos Julián HUD desactivado",
+		activated: "Carlos Julián HUD activado encima del input",
+		compact: "Carlos Julián HUD modo compacto activado",
+		full: "Carlos Julián HUD modo completo activado",
+		activatedWithMode: "Carlos Julián HUD activado encima del input ({mode})",
+		statusActivated: "Carlos Julián HUD footer status activado",
+		statusDeactivated: "Carlos Julián HUD footer status desactivado",
 		...PERSONA_PRESETS.gentleman.welcomeNotifys,
 		welcomeModeExpanded: "modo expandido",
 		welcomeModeCompact: "modo compacto",
@@ -230,10 +230,10 @@ const DEFAULTS: CuteStrings = {
 		toolsFmt: "tools {tools}",
 	},
 	sidebarBanner: {
-		full: "✿ Cinlodev CUTE · Gentle-Shell ✿",
-		short: "✿ Cinlodev CUTE ✿",
+		full: "✿ Carlos Julián · Gentle-Shell ✿",
+		short: "✿ Carlos Julián ✿",
 		glyph: "✿",
-		brand: "Cinlodev CUTE",
+		brand: "Carlos Julián",
 		partner: "Gentle-Shell",
 	},
 	todos: {
@@ -256,7 +256,7 @@ const DEFAULTS: CuteStrings = {
 	editorHint: "type, or / for commands",
 	welcomeTitles: {
 		...PERSONA_PRESETS.gentleman.welcomeTitles,
-		themeFallback: "Cinlodev CUTE",
+		themeFallback: "Carlos Julián",
 	},
 	welcomeHotkeys: {
 		interrupt: "interrupt",
@@ -267,9 +267,9 @@ const DEFAULTS: CuteStrings = {
 		expand: "expand",
 		collapse: "collapse",
 	},
-	commandName: "cinlodev",
-	commandDescription: "Check or reapply Cinlodev CUTE aesthetics and widgets (/cinlodev)",
-	commandNotify: "🌸 Cinlodev CUTE: Header, HUD, Editor y Footer CUTE aplicados.",
+	commandName: "carlosjulian",
+	commandDescription: "Check or reapply Carlos Julián aesthetics and widgets (/carlosjulian)",
+	commandNotify: "🌸 Carlos Julián: Header, HUD, Editor y Footer aplicados.",
 };
 
 export { DEFAULTS };

@@ -237,7 +237,15 @@ export default function cinlodevCuteExtension(pi: ExtensionAPI): void {
 	// Register universal "/cute" alias if commandName was customized or differs
 	if (cmdName !== "cute") {
 		pi.registerCommand("cute", {
-			description: "Reapply CUTE theme aesthetics and reload configuration (/cute)",
+			description: "Reapply theme aesthetics and reload configuration (/cute)",
+			handler: cuteCmdHandler,
+		});
+	}
+
+	// Register legacy "/cinlodev" alias if commandName differs
+	if (cmdName !== "cinlodev") {
+		pi.registerCommand("cinlodev", {
+			description: "Reapply Carlos Julián aesthetics and reload configuration (/cinlodev)",
 			handler: cuteCmdHandler,
 		});
 	}
