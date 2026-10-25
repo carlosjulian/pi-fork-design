@@ -13,8 +13,32 @@ import { syncProjectCloud, detectProjectName } from "./src/cute-engram.ts";
 import { CuteContextMonitor } from "./src/cute-context-monitor.ts";
 import { setCapabilityOverrides } from "@earendil-works/pi-tui";
 import * as fs from "node:fs";
+import * as os from "node:os";
+import * as path from "node:path";
+import { fileURLToPath } from "node:url";
 
 export default function cinlodevCuteExtension(pi: ExtensionAPI): void {
+	// Auto-sync custom theme files to Pi's global themes directory (~/.pi/agent/themes/)
+	try {
+		const agentDir = process.env.PI_CODING_AGENT_DIR || path.join(os.homedir(), ".pi", "agent");
+		const themesDir = path.join(agentDir, "themes");
+		if (!fs.existsSync(themesDir)) {
+			fs.mkdirSync(themesDir, { recursive: true });
+		}
+		const here = path.dirname(fileURLToPath(import.meta.url));
+		const srcThemes = path.join(here, "themes");
+		if (fs.existsSync(srcThemes)) {
+			for (const file of fs.readdirSync(srcThemes)) {
+				if (file.endsWith(".json")) {
+					const dest = path.join(themesDir, file);
+					if (!fs.existsSync(dest) || fs.statSync(path.join(srcThemes, file)).mtimeMs > fs.statSync(dest).mtimeMs) {
+						fs.copyFileSync(path.join(srcThemes, file), dest);
+					}
+				}
+			}
+		}
+	} catch {}
+
 	// Forzar soporte de Kitty graphics en entornos Ghostty / Kitty
 	try {
 		setCapabilityOverrides({ images: "kitty" });
